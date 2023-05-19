@@ -301,10 +301,10 @@ class Waypoint {
 @JsonSerializable()
 class GeocodedWaypoint {
   /// JSON geocoder_status
-  final String geocoderStatus;
+  final String? geocoderStatus;
 
   /// JSON place_id
-  final String placeId;
+  final String? placeId;
 
   @JsonKey(defaultValue: <String>[])
   final List<String> types;
